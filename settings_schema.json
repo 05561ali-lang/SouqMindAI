@@ -1,0 +1,17 @@
+{
+  "name": "SouqMind AI Theme",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "ai_assistant",
+      "label": "Enable AI Assistant",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "smart_cart",
+      "label": "Enable Smart Cart",
+      "default": true
+    }
+  ]
+}

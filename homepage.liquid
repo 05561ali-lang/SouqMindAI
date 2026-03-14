@@ -1,0 +1,15 @@
+
+<section class="hero">
+<h1>مرحبا بكم في {{ store.name }}</h1>
+<p>تجربة تسوق ذكية مع SouqMind AI</p>
+</section>
+
+<section class="products">
+<h2>منتجات مميزة</h2>
+
+<div class="grid">
+{% for product in collections.all.products limit:8 %}
+{% render 'product-card', product: product %}
+{% endfor %}
+</div>
+</section>

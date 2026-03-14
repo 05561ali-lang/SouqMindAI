@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ store.name }}</title>
+<link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+</head>
+<body>
+
+{% section 'header' %}
+
+<main>
+{{ content_for_layout }}
+</main>
+
+{% section 'footer' %}
+{% section 'ai-assistant' %}
+
+<script src="{{ 'ai-search.js' | asset_url }}"></script>
+<script src="{{ 'upsell-engine.js' | asset_url }}"></script>
+<script src="{{ 'discount-engine.js' | asset_url }}"></script>
+<script src="{{ 'analytics.js' | asset_url }}"></script>
+<script src="{{ 'souqmind-engine.js' | asset_url }}"></script>
+<script src="{{ 'assistant.js' | asset_url }}"></script>
+
+</body>
+</html>

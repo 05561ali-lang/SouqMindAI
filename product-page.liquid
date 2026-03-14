@@ -1,0 +1,26 @@
+
+<section class="product">
+
+<div class="gallery">
+{% for image in product.images %}
+<img src="{{ image.src }}">
+{% endfor %}
+</div>
+
+<div class="info">
+
+<h1>{{ product.title }}</h1>
+
+<div class="price">{{ product.price }}</div>
+
+{% if product.stock < 5 %}
+<div class="low-stock">⚠ بقي {{ product.stock }} فقط</div>
+{% endif %}
+
+<p>{{ product.description }}</p>
+
+<button class="add-cart">أضف إلى السلة</button>
+
+</div>
+
+</section>

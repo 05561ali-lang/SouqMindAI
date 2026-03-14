@@ -1,0 +1,18 @@
+
+<section class="cart">
+
+<h1>سلة التسوق</h1>
+
+<div class="shipping-bar">
+أضف 50 ريال لتحصل على شحن مجاني
+</div>
+
+{% for item in cart.items %}
+<div class="cart-item">
+<img src="{{ item.image }}">
+<strong>{{ item.title }}</strong>
+<p>{{ item.price }}</p>
+</div>
+{% endfor %}
+
+</section>

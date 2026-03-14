@@ -1,0 +1,10 @@
+
+body{font-family:Arial;margin:0;background:#fafafa}
+.header{display:flex;justify-content:space-between;padding:16px;background:#111;color:white}
+.hero{padding:80px;text-align:center;background:#eee}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;padding:40px}
+.product{display:flex;flex-wrap:wrap;gap:40px;padding:40px}
+.product-card{border:1px solid #eee;padding:10px;background:#fff;text-align:center}
+.price{font-size:22px;color:#2c7}
+.low-stock{color:red;font-weight:bold}
+@media(max-width:768px){.product{flex-direction:column}.header{flex-direction:column;gap:10px}}
